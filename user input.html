@@ -7,12 +7,19 @@
 </head>
 <body>
     <button id="mybutton">Click Me!</button>
+
+    <input type="text" id="searchBox">
     <script>
         const button = document.getElementById('mybutton');
 
         button.addEventListener('click', () => {
             alert('Button Clicked!');
         });
+
+        const searchBox = document.querySelector('#searchBox');
+        searchBox.addEventListener('keyup',() => {
+            console.log('event triggered!');
+        })
     </script>
 </body>
 </html>
